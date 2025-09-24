@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Jump</title>
+    <title>Super Jogo do mario</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div class="game-board">
+        <div class="tela-Inicial">
+            <img src="_imagens/logoSenai.png" alt="logo do SENAI" width="350px">
+            <h1>Super jogo do Mario</h1>
+            <button id="start-button">Iniciar jogo</button>
+
+            <div id="escolha-Personagem">
+                <div id="marioDiv" class="divPersonagem" value="mario" onclick="escolhaPersonagem('mario')">
+                    <img src="_media/mario.gif" alt="" class="personagemEscolha" width="350px">
+                    <p>Mario</p>
+                </div>
+                <div id="gokuDiv" class="divPersonagem" value="goku" onclick="escolhaPersonagem('goku')">
+                    <img src="_media/goku.gif" alt="" class="personagemEscolha" width="350px">
+                    <p>Goku</p>
+                </div>
+                <div id="megamanDiv" class="divPersonagem" value="megaman" onclick="escolhaPersonagem('megaman')">
+                    <img src="_media/yd6sCid.gif" alt="" class="personagemEscolha" width="200px">
+                    <p>Mega Man X</p>
+                </div>
+                <div id="sonicDiv" class="divPersonagem" value="sonic" onclick="escolhaPersonagem('sonic')">
+                    <img src="_media/sonic.gif" alt="" class="personagemEscolha" width="200px">
+                    <p>Sonic The Hedgehog</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tela-jogar-denovo"></div>
+    </div>
 </body>
+
 </html>
